@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KV - Full Stack Developer Portfolio</title>
+  <meta name="description" content="Explore projects, skills, and contact information for KV, a full stack developer specializing in HTML, CSS, JavaScript, React, Node.js, responsive design, and more.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>KV Portfolio</h1>
+    <nav role="navigation">
+      <button id="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <ul id="nav-menu" class="hidden">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>I am a full stack developer passionate about creating intuitive web applications with modern technologies and responsive designs that enhance user experiences.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-filters">
+        <button class="filter-button" data-category="all">All</button>
+        <button class="filter-button" data-category="web">Web</button>
+        <button class="filter-button" data-category="mobile">Mobile</button>
+        <button class="filter-button" data-category="marketing">Marketing</button>
+      </div>
+      <div class="project-list">
+        <article class="project-item" data-category="web">
+          <figure>
+            <img 
+              src="https://placehold.co/150x140" 
+              alt="Task Management Application Interface"
+            >
+            <figcaption>Project One: A task management application.</figcaption>
+          </figure>
+        </article>
+        
+        <article class="project-item" data-category="mobile">
+          <figure>
+            <img 
+              src="https://placehold.co/150x140" 
+              alt="Interactive Collaborative Learning Platform"
+            >
+            <figcaption>Project Two: An interactive collaborative learning platform.</figcaption>
+          </figure>
+        </article>
+        
+        <article class="project-item" data-category="marketing">
+          <figure>
+            <img 
+              src="https://placehold.co/150x140" 
+              alt="Digital Marketing Analytics Dashboard"
+            >
+            <figcaption>Project Three: A digital marketing analytics solution.</figcaption>
+          </figure>
+        </article>
+        
+        <article class="project-item" data-category="web">
+          <figure>
+            <img 
+              src="https://placehold.co/150x140" 
+              alt="Responsive E-commerce Website"
+            >
+            <figcaption>Project Four: A responsive e-commerce website.</figcaption>
+          </figure>
+        </article>
+        
+        <article class="project-item" data-category="mobile">
+          <figure>
+            <img 
+              src="https://placehold.co/150x140" 
+              alt="Social Media App Interface"
+            >
+            <figcaption>Project Five: A social media application.</figcaption>
+          </figure>
+        </article>
+        
+        <article class="project-item" data-category="marketing">
+          <figure>
+            <img 
+              src="https://placehold.co/150x140" 
+              alt="SEO Analytics Tool"
+            >
+            <figcaption>Project Six: An SEO analytics tool.</figcaption>
+          </figure>
+        </article>
+        
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Git</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required tabindex="0">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required tabindex="0">
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required tabindex="0"></textarea>
+        </div>
+        <button type="submit" tabindex="0">Send</button>
+      </form>
+    </section>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
